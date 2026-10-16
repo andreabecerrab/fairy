@@ -1,0 +1,15 @@
+
+<div class="carousel-wrapper">
+  <div class="carousel" #carousel>
+    <div
+      class="carousel-item"
+      *ngFor="let image of images; let i = index"
+      [style.transform]="
+        'translateY(' + getOffset(i) + 'px) rotate(' + getRotation(i) + 'deg)'
+      "
+    >
+      <img [src]="image.src" [alt]="image.alt" />
+    </div>
+  </div>
+</div>
+

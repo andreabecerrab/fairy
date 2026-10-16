@@ -2,12 +2,13 @@ import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@ang
 import { ImageComponent } from '../img/image';
 import { EmojiAnimation } from '../../services/emoji-animation';
 import { CardComponent } from '../card/card';
+import { CurvedCarouselComponent } from '../carrousel/curved-carousel.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.html',
   styleUrl: './home.scss',
-  imports: [ImageComponent, CardComponent]
+  imports: [ImageComponent, CardComponent, CurvedCarouselComponent]
 })
 export class Home implements AfterViewInit, OnDestroy  {
   @ViewChild('container', { static: true })

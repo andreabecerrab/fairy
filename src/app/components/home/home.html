@@ -9,62 +9,74 @@
         <strong>lead</strong> the integration of technology and design to create <strong>beautiful experiences</strong>.
         All here is inspired by the things I care, my passions and made with love. ⟡☆☼
       </p>
+      <!-- First Row -->
       <div class="home-row home-experience">
+        <!-- Experience -->
         <card-component title="My Experience">
           <div class="experience_timeline">
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Twitter DevelopHER</p>
+              <span class="experience__item__date">2019</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Grace Hopper Scholar</p>
+              <span class="experience__item__date">2019</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Software Engineer Intern @BMW</p>
+              <span class="experience__item__date">2020 - 2021</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Teacher Assistant</p>
+              <span class="experience__item__date">June 2020</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Application Developer @IBM</p>
+              <span class="experience__item__date">2021 - 2022</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">UI Designer (Volunteer)</p>
+              <span class="experience__item__date">2021</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">UI Software Engineer @GEVernova</p>
+              <span class="experience__item__date">2022 - 2025</span>
+            </div>
+            <div class="experience__item__content">
+              <p class="experience__item__title">Sr Software Engineer</p>
+              <span class="experience__item__date">2025 - Present</span>
             </div>
           </div>
         </card-component>
+        <!-- Education -->
         <card-component title="Education">
           <div class="home_education_item">
             <card-component></card-component>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Computer Science and Technology</p>
+              <span class="experience__item__date">2016 - 2021</span>
             </div>
           </div>
           <div class="home_education_item">
             <card-component></card-component>
             <div class="experience__item__content">
-              <p class="experience__item__title">Software Engineer</p>
-              <span class="experience__item__date">2020 - Present</span>
+              <p class="experience__item__title">Interaction Designer</p>
+              <span class="experience__item__date">2025 - Present</span>
             </div>
           </div>
         </card-component>
       </div>
+      <!-- Second Row -->
       <div class="home-row home-activities">
-        <card-component title="📍">
+        <card-component title="📍" [size]="'small'">
         </card-component>
-        <card-component title="🔗"></card-component>
-        <card-component title="🍰"></card-component>
-        <card-component title="🦋"></card-component>
+        <card-component title="🔗" [size]="'small'"></card-component>
+        <card-component title="🍰" [size]="'small'">
+          <app-curved-carousel></app-curved-carousel>
+        </card-component>
+        <card-component title="🦋" [size]="'small'">
+          <app-curved-carousel></app-curved-carousel>
+        </card-component>
       </div>
     </div>
   </section>
