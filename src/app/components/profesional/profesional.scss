@@ -1,0 +1,9 @@
+.profesional-content{
+    width: 800px;
+    margin: auto;
+    .profesional-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: var(--spacing-m);
+    }
+}

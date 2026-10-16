@@ -1,0 +1,23 @@
+.navigation-menu{
+    position: absolute;
+    bottom: var(--spacing-l);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--spacing-s);
+    border-radius: var(--spacing-xl);
+    background-color: var(--black);
+    color: var(--light);
+    opacity: var(--opacity-light);
+    z-index: 3;
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: var(--spacing-s);
+        backdrop-filter: blur(2.5px);
+    }
+    li:hover, a:hover{
+        color: var(--accent);
+        text-decoration-color: var(--accent);
+    }
+
+}

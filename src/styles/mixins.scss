@@ -1,0 +1,7 @@
+// font mixin
+@mixin font($family: 'Default', $weight: 400, $style: normal, $size: 35px) {
+    font-family: $family, sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $size;
+}

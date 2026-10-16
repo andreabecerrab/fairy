@@ -1,0 +1,10 @@
+
+.academic-content{
+    width: 800px;
+    margin: auto;
+    .academic-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: var(--spacing-m);
+    }
+}
