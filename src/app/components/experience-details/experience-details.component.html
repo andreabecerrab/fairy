@@ -1,0 +1,27 @@
+<aside class="details">
+  <section class="details__section">
+    <h5 class="details__label">My Role</h5>
+    <p class="details__value">{{ role }}</p>
+  </section>
+
+  <section class="details__section">
+    <h5 class="details__label">Skills</h5>
+    <ul class="details__skills">
+      @for (skill of skills; track $index) {
+        <li class="details__skill">{{ skill }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="details__section">
+    <h5 class="details__label">Outcome</h5>
+    <p class="details__value">{{ outcome }}</p>
+  </section>
+
+  <section class="details__section">
+    <h5 class="details__label">Link</h5>
+    <a class="details__link" [href]="link" target="_blank" rel="noopener noreferrer">
+      {{ link }}
+    </a>
+  </section>
+</aside>

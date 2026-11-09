@@ -1,0 +1,20 @@
+<section class="wrapper">
+  <div class="wrapper__main">
+    <header class="wrapper__header">
+      <h1 class="wrapper__title">{{ title }}</h1>
+      <p class="wrapper__subtitle">{{ subtitle }}</p>
+    </header>
+
+    <!-- Default slot: <app-content-experience> -->
+    <div class="wrapper__content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <!-- Side slot: <app-experience-details> -->
+  @if (hasAsideContent){
+    <div class="wrapper__aside">
+      <ng-content select="app-experience-details"></ng-content>
+    </div>    
+  } 
+</section>

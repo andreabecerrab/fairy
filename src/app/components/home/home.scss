@@ -8,7 +8,8 @@
     background: radial-gradient(circle,rgba(215, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 100%);
     .home-content{
         padding: var(--spacing-m);
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: var(--spacing-m);
     }
     .home-text{
@@ -22,6 +23,11 @@
         display: flex;
         width: 100%;
         gap: 32px;
+    }
+    .home-activities{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
     }
     .home-experience{
         max-height: 250px;

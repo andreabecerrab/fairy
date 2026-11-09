@@ -11,6 +11,9 @@ h1 {
 h3 {
     @include font('Mitir', 500, normal, 25px); 
 }
+h5 {
+    @include font('Mitir', 100, normal, 20px); 
+}
 ul, span {
     @include font('Default', 400, normal, 16px);
 }

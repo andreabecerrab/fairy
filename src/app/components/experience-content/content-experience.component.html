@@ -1,0 +1,11 @@
+<div class="content-experience">
+  @for (item of items; track $index) {
+    <article
+      class="content-experience__item"
+      [class.content-experience__item--right]="layout === 'right'"
+    >
+      <p class="content-experience__text">{{ item.text }}</p>
+      <img class="content-experience__img" [src]="item.img" alt="" />
+    </article>
+  }
+</div>

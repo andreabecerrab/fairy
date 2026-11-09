@@ -1,37 +1,28 @@
-<section class="portfolio-section">
-    <h1>Academic</h1>
-    <div class="academic-content">
-        <div class="academic-grid">
-            <div>
-                <p>🦹🏽‍♂️</p>
-                <h3>Pumpking</h3>
-            </div>
-            <image-component src="../../../assets/img/GEAK0015.JPG"></image-component>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis enim ac orci dapibus feugiat. Aenean vel metus euismod eros semper porttitor pharetra blandit urna. Proin sodales lorem sed sapien ultrices, a imperdiet magna sagittis. Nunc venenatis auctor posuere. Nam sed orci ut nulla suscipit placerat. Nullam ac posuere ligula. Maecenas et augue rutrum, rhoncus augue quis, eleifend ante.</p>
-        </div>
-        <div class="academic-grid">
-            <div>
-                <p>🧝🏽‍♂️</p>
-                <h3>Ux Logbook</h3>
-            </div>
-            <image-component src="../../../assets/img/GEAK0015.JPG"></image-component>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis enim ac orci dapibus feugiat. Aenean vel metus euismod eros semper porttitor pharetra blandit urna. Proin sodales lorem sed sapien ultrices, a imperdiet magna sagittis. Nunc venenatis auctor posuere. Nam sed orci ut nulla suscipit placerat. Nullam ac posuere ligula. Maecenas et augue rutrum, rhoncus augue quis, eleifend ante.</p>
-        </div>
-        <div class="academic-grid">
-            <div>
-                <p>🧶</p>
-                <h3>Twitter + Alexa</h3>
-            </div>
-            <image-component src="../../../assets/img/GEAK0015.JPG"></image-component>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis enim ac orci dapibus feugiat. Aenean vel metus euismod eros semper porttitor pharetra blandit urna. Proin sodales lorem sed sapien ultrices, a imperdiet magna sagittis. Nunc venenatis auctor posuere. Nam sed orci ut nulla suscipit placerat. Nullam ac posuere ligula. Maecenas et augue rutrum, rhoncus augue quis, eleifend ante.</p>
-        </div>
-        <div class="academic-grid">
-            <div>
-                <p>🧶</p>
-                <h3>Enter the dungeon</h3>
-            </div>
-            <image-component src="../../../assets/img/GEAK0015.JPG"></image-component>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis enim ac orci dapibus feugiat. Aenean vel metus euismod eros semper porttitor pharetra blandit urna. Proin sodales lorem sed sapien ultrices, a imperdiet magna sagittis. Nunc venenatis auctor posuere. Nam sed orci ut nulla suscipit placerat. Nullam ac posuere ligula. Maecenas et augue rutrum, rhoncus augue quis, eleifend ante.</p>
-        </div>
+<section>
+    <div class="profesional-content">
+        <app-main-experience-wrapper [title]="'Amazon Fire TV'" [subtitle]="'Smart TV Ecosystem Redesign'" [hasAsideContent]="true">
+            <app-content-experience [items]="geVernovaItems"></app-content-experience>
+            <app-experience-details></app-experience-details>
+        </app-main-experience-wrapper>
+        <app-main-experience-wrapper [title]="'Luxotica'" [subtitle]="'Smart Wearable Design'" [hasAsideContent]="true">
+            <app-content-experience [layout]="'right'" [items]="ibmItems"></app-content-experience>
+            <app-experience-details [role]="'Role'"></app-experience-details>
+        </app-main-experience-wrapper>
+        <app-main-experience-wrapper [title]="'Italdesign'" [subtitle]="'Automotive Experience Design'" [hasAsideContent]="true">
+            <app-content-experience [items]="bmwItems"></app-content-experience>
+            <app-experience-details [role]="'Role'"></app-experience-details>
+        </app-main-experience-wrapper>
+        <app-main-experience-wrapper [title]="'Pumpking'" [subtitle]="'Product Design'" [hasAsideContent]="true">
+            <app-content-experience [items]="bmwItems"></app-content-experience>
+            <app-experience-details [role]="'Role'"></app-experience-details>
+        </app-main-experience-wrapper>
+        <app-main-experience-wrapper [title]="'Nodus'" [subtitle]="'Mobile Application + Compuer Vision'" [hasAsideContent]="true">
+            <app-content-experience [items]="bmwItems"></app-content-experience>
+            <app-experience-details [role]="'Role'"></app-experience-details>
+        </app-main-experience-wrapper>
+        <app-main-experience-wrapper [title]="'Pragmatics to Kids'" [subtitle]="'XR learning experience'" [hasAsideContent]="true">
+            <app-content-experience [items]="bmwItems"></app-content-experience>
+            <app-experience-details [role]="'Role'"></app-experience-details>
+        </app-main-experience-wrapper>
     </div>
 </section>
