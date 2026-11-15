@@ -2,7 +2,8 @@ import { Component, Input } from '@angular/core';
 
 export interface ContentItem {
   text: string;
-  img: string;
+  img: string[];
+  title?: string;
 }
 
 export type ContentLayout = 'left' | 'right';

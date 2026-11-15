@@ -10,7 +10,7 @@
   &__item {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     gap: var(--spacing-m);
 
@@ -23,6 +23,15 @@
   &__text {
     flex: 1 1 0;
     margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+  }
+
+  &__title{
+    flex: 1 1 0;
+    margin: 0;
+    margin-bottom: var(--spacing-xxs);
     font-size: 1rem;
     line-height: 1.2;
     color: var(--color-text-primary);

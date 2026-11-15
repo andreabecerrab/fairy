@@ -12,15 +12,19 @@ import { MainExperienceWrapperComponent } from '../experience-wrap/main-experien
 })
 export class Academic {
   geVernovaItems = [
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' },
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' }
+    { img: ['assets/images/experience/ge-vernova.png'], text: 'Designing a new exprience and interaction for smart tv ecosystem. \nBased on Amazon Fire TV as a case study. \n\n User Research: Combined quantitative and qualitative methods to gain a comprehensive understanding of users behaviors, expectations, and pain points when interacting with Fire TV Stick Interface and Remote Control. \n\n Conducted questionnaires, interviews, usability testing, cognitive walkthroughs, heuristic evaluations, and tree testing. \n Explored individual and shared viewing habits, remote co-watching experiences, interface usability, and information architecture. \n\n\n Findings:\n 1) Content and Interface \n 2) Remote Control Interaction \n 3) Co-watching Interaction'
+    },
+    { img: ['assets/images/experience/ge-vernova.png', 'assets/images/experience/ge-vernova.png',  'assets/images/experience/ge-vernova.png'], text: '' },
+    { img: [''], text: 'Protypes:\n 1) New Identity \n 2) User Interface  \n 3) New Remote Control'},
+    { img: ['assets/images/experience/ge-vernova.png', 'assets/images/experience/ge-vernova.png'], text: '' },
+    { img: ['assets/images/experience/ge-vernova.png'], text:'', title: 'Results:' }
   ];
   ibmItems = [
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' },
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' }
+    { img: ['assets/images/experience/ge-vernova.png'], text: 'Explore and innovate in the field of smart portable devices. Redraw and reinterpret everyday objects. Through research and iterative interchange, decontextualize familiar artefacts. \n\n A case study for EssilorLuxxotica - Meta and Rayban Smart Glasses \n\n All rights reserved. Property of EssilorLuxxotica \n\n The process: \n 1) Identify the objective user\n 2) Generate ideas / Innovate \n 3) Validate the technical characteristics\n 4) Design the interaction interface \n Create a prototype' },
+    { img: ['assets/images/experience/ge-vernova.png', 'assets/images/experience/ge-vernova.png'], text: '' },   { img: ['assets/images/experience/ge-vernova.png'], text: '' }
   ];
   bmwItems = [
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' },
-    { img: 'assets/images/experience/ge-vernova.png', text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' }
+    { img: ['assets/images/experience/ge-vernova.png'], text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' },
+    { img: ['assets/images/experience/ge-vernova.png'], text: 'Developed and maintained user interfaces for web applications using Angular, HTML, CSS, and TypeScript.' }
   ];
 }

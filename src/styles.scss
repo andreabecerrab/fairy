@@ -19,6 +19,7 @@ ul, span {
 }
 p {
     @include font('Default', 100, normal, 20px);
+    white-space: pre-line;
 }
 .portfolio-section{
     height: 100vh;

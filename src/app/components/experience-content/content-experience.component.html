@@ -1,11 +1,28 @@
 <div class="content-experience">
   @for (item of items; track $index) {
-    <article
-      class="content-experience__item"
-      [class.content-experience__item--right]="layout === 'right'"
-    >
-      <p class="content-experience__text">{{ item.text }}</p>
-      <img class="content-experience__img" [src]="item.img" alt="" />
-    </article>
+    @if (item.text !== '' && item.img.length === 1) {
+      <article
+        class="content-experience__item"
+        [class.content-experience__item--right]="layout === 'right'"
+      >
+        <p class="content-experience__text">{{ item.text }}</p>
+        <img class="content-experience__img" [src]="item.img" alt="" />
+      </article>
+    } @else if (item.text === '' && item.img.length === 1) {
+       <article
+        [class.content-experience__item--right]="layout === 'left'">
+         <h5 class="content-experience__title">{{ item.title }}</h5>
+         <img class="content-experience__img" [src]="item.img" alt="" />
+      </article>
+    } @else {
+      <article
+        class="content-experience__item"
+        [class.content-experience__item--right]="layout === 'right'"
+      >
+        @for (img of item.img; track $index) {
+          <img class="content-experience__img" [src]="img" alt="" />
+        }
+      </article>
+    }
   }
 </div>
