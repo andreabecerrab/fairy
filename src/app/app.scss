@@ -9,6 +9,17 @@
     color: var(--light);
     opacity: var(--opacity-light);
     z-index: 3;
+    visibility: visible;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(-50%, calc(100% + var(--spacing-l)));
+        transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear 180ms;
+    }
+
     ul{
         display: flex;
         flex-direction: row;

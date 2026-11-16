@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
     @Input() title: string = '';
     @Input() size: string = '';
+    @Input() src: string = '';
 
     ngOnInit(): void {
     }

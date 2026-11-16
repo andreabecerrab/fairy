@@ -4,9 +4,9 @@
     <image-component src="../../../assets/img/image.png"></image-component>
     <div class="home-content">
       <h1>Hey! I'm Andrea</h1>
-      <p class="home-text">Welcome to my portfolio. I'm a <strong>Interaction Designer</strong>  and  <strong>Software Engineer</strong> looking to
+      <p class="home-text">Welcome!!!!. I'm a <strong>Interaction Designer</strong>  and  <strong>Software Engineer</strong> looking to
         <strong>lead</strong> the integration of technology and design to create <strong>digital products and beautiful experiences</strong>.
-        All here is inspired by the things I care, my passions and made with love. ⟡☆☼
+        All here is inspired by the things I care made with love. ⟡☆☼
       </p>
       <!-- First Row -->
       <div class="home-row home-experience">
@@ -14,33 +14,34 @@
         <card-component title="My Experience">
           <div class="experience_timeline">
             <div class="experience__item__content">
-              <p class="experience__item__title">Twitter DevelopHER</p>
-              <span class="experience__item__date">2019</span>
-            </div>
+              <p class="experience__item__title">UI Software Engineer @GEVernova</p>
+              <span class="experience__item__date">2022 - 2025</span>
+            </div>            
             <div class="experience__item__content">
-              <p class="experience__item__title">Grace Hopper Scholar</p>
-              <span class="experience__item__date">2019</span>
-            </div>
-            <div class="experience__item__content">
-              <p class="experience__item__title">Enabling IT Intern @BMW</p>
-              <span class="experience__item__date">2020 - 2021</span>
-            </div>
-            <div class="experience__item__content">
-              <p class="experience__item__title">Teacher Assistant</p>
-              <span class="experience__item__date">June 2020</span>
+              <p class="experience__item__title">UI Designer (Volunteer)</p>
+              <span class="experience__item__date">2021</span>
             </div>
             <div class="experience__item__content">
               <p class="experience__item__title">Application Developer @IBM</p>
               <span class="experience__item__date">2021 - 2022</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">UI Designer (Volunteer)</p>
-              <span class="experience__item__date">2021</span>
+              <p class="experience__item__title">Teacher Assistant</p>
+              <span class="experience__item__date">June 2020</span>
             </div>
             <div class="experience__item__content">
-              <p class="experience__item__title">UI Software Engineer @GEVernova</p>
-              <span class="experience__item__date">2022 - 2025</span>
+              <p class="experience__item__title">Enabling IT Intern @BMW</p>
+              <span class="experience__item__date">2020 - 2021</span>
             </div>
+            <div class="experience__item__content">
+              <p class="experience__item__title">Grace Hopper Scholar</p>
+              <span class="experience__item__date">2019</span>
+            </div>
+            <div class="experience__item__content">
+              <p class="experience__item__title">Twitter DevelopHER</p>
+              <span class="experience__item__date">2019</span>
+            </div>
+
             <!-- <div class="experience__item__content">
               <p class="experience__item__title">Sr Software Engineer</p>
               <span class="experience__item__date">2025 - Present</span>
@@ -50,14 +51,14 @@
         <!-- Education -->
         <card-component title="Education">
           <div class="home_education_item">
-            <card-component></card-component>
+            <card-component src="'../../../assets/img/home/politecnico-milano.jpg'"></card-component>
             <div class="experience__item__content">
               <p class="experience__item__title">Digital and Interaction Design</p>
               <span class="experience__item__date">2025 - Present</span>
             </div>
           </div>
           <div class="home_education_item">
-            <card-component></card-component>
+            <card-component src="'../../../assets/img/home/tec-logo.jpg'"></card-component>
             <div class="experience__item__content">
               <p class="experience__item__title">Computer Science and Technology</p>
               <span class="experience__item__date">2016 - 2021</span>
@@ -68,12 +69,35 @@
       <!-- Second Row -->
       <div class="home-activities">
         <card-component title="📍" [size]="'small'">
+          <!-- google map intregration to show a location by coordinates -->
+            <iframe
+              class="location-map"
+              src="https://maps.google.com/maps?q=Milan%2C%20Italy&z=12&output=embed"
+              title="Map showing Milan, Italy"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </card-component>
-        <card-component title="🔗" [size]="'small'"></card-component>
-        <card-component title="🍰" [size]="'small'">
+        <card-component title="🔗" [size]="'small'">
+          <div class="home-links">
+            <!-- linkedin -->
+            <a href="https://www.linkedin.com/in/andrea-becerra" target="_blank" rel="noopener noreferrer">
+              <span>LinkedIn</span>
+            </a>
+            <!-- github -->
+            <a href="https://www.github.com/andreabecerrab/" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+            </a>
+            <!-- hacks -->
+            <a href="https://devpost.com/andreabecerrab/" target="_blank" rel="noopener noreferrer">
+              <span>DevPost</span>
+            </a>
+          </div>
+        </card-component>
+        <card-component title="🍰" [size]="'small'" [src]="'../../../assets/img/home/pan.jpeg'">
           <!-- <app-curved-carousel></app-curved-carousel> -->
         </card-component>
-        <card-component title="🦋" [size]="'small'">
+        <card-component title="🦋" [size]="'small'" [src]="'../../../assets/img/home/sunset.jpeg'">
           <!-- <app-curved-carousel></app-curved-carousel> -->
         </card-component>
       </div>

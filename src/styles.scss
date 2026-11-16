@@ -14,10 +14,10 @@ h3 {
 h5 {
     @include font('Mitir', 100, normal, 20px); 
 }
-ul, span {
+ul, span, a{
     @include font('Default', 400, normal, 16px);
 }
-p {
+p{
     @include font('Default', 100, normal, 20px);
     white-space: pre-line;
 }

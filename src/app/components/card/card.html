@@ -1,5 +1,8 @@
 
-<div class="experience" [class]="title ? size : 'img_experience' ">
+<div
+  class="experience"
+  [class]="title ? size : 'img_experience'"
+  [style.background-image]="src ? 'url(' + src + ')' : null">
  @if (title) {
   <p class="experience__title">{{ title }}</p>
  }

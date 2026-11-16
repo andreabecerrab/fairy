@@ -1,4 +1,4 @@
-<nav class="navigation-menu">
+<nav class="navigation-menu" [class.is-hidden]="isScrolling()">
   <ul>
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/academic" routerLinkActive="active">Projects</a></li>
