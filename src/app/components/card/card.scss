@@ -18,6 +18,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .experience__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  > :not(.experience__video) {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .small{

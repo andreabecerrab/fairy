@@ -1,28 +1,50 @@
 <div class="content-experience">
   @for (item of items; track $index) {
     @if (item.text !== '' && item.img.length === 1) {
-      <article
-        class="content-experience__item"
-        [class.content-experience__item--right]="layout === 'right'"
-      >
+      <article class="content-experience__item" [class.content-experience__item--right]="layout === 'right'">
         <p class="content-experience__text">{{ item.text }}</p>
-        <img class="content-experience__img" [src]="item.img" alt="" />
-      </article>
-    } @else if (item.text === '' && item.img.length === 1) {
-       <article
-        [class.content-experience__item--right]="layout === 'left'">
-         <h5 class="content-experience__title">{{ item.title }}</h5>
-         <img class="content-experience__img" [src]="item.img" alt="" />
-      </article>
-    } @else {
-      <article
-        class="content-experience__item"
-        [class.content-experience__item--right]="layout === 'right'"
-      >
-        @for (img of item.img; track $index) {
-          <img class="content-experience__img" [src]="img" alt="" />
+        @if (isVideo(item.img[0])) {
+          <video class="content-experience__img" [src]="item.img[0]" autoplay muted loop playsinline></video>
+        } @else {
+          <img class="content-experience__img" [src]="item.img[0]" alt="" />
         }
       </article>
+    } @else if(item.text === '' && item.img.length > 0) {
+        <article [class.content-experience__item--right]="layout === 'left'">
+           <h5 class="content-experience__title">{{ item.title }}</h5>
+           <!-- Carrousel -->
+            <div class="content-experience__carousel-wrap">
+              <div #carousel class="content-experience__carousel" role="group" aria-label="Media carousel">
+                 @for (media of item.img; track $index) {
+                  <div class="content-experience__carousel-slide">
+                    @if (isVideo(media)) {
+                      <video class="content-experience__img" [src]="media" autoplay muted loop playsinline></video>
+                    } @else {
+                      <img class="content-experience__img" [src]="media" alt="" />
+                    }
+                  </div>
+                 }
+                 <!-- Carrousel buttons -->
+                @if (item.img.length > 1){
+                <button class="content-experience__carousel-arrow content-experience__carousel-arrow--previous" type="button"
+                  aria-label="Previous image" (click)="scrollCarousel(carousel, -1)"><span aria-hidden="true"></span></button>
+                <button class="content-experience__carousel-arrow content-experience__carousel-arrow--next" type="button"
+                  aria-label="Next image" (click)="scrollCarousel(carousel, 1)"><span aria-hidden="true"></span>
+                </button>
+                }
+              </div>
+            </div>
+        </article>
+    } @else {
+    <article class="content-experience__item" [class.content-experience__item--right]="layout === 'right'">
+      @for (img of item.img; track $index) {
+        @if (isVideo(img)) {
+          <video class="content-experience__img" [src]="img" autoplay muted loop playsinline></video>
+        } @else {
+          <img class="content-experience__img" [src]="img" alt="" />
+        }
+      }
+    </article>
     }
   }
 </div>

@@ -3,6 +3,23 @@
     <header class="wrapper__header">
       <h1 class="wrapper__title">{{ title }}</h1>
       <p class="wrapper__subtitle">{{ subtitle }}</p>
+      <div class="wrapper__cpills">
+        <!-- Pills  for role and skills-->
+        @for (r of role; track $index) {
+          <span class="wrapper__pill pill_skill">{{ r }}</span>
+        }
+      </div>
+      <div>
+        <!-- Pills  for role and skills-->
+        @for (s of skills; track $index) {
+          <span class="wrapper__pill">{{ s }}</span>
+        }
+      </div>
+      @if (link) {
+      <div>
+         <span>Link: </span><a class="wrapper__link" [href]="link" target="_blank" rel="noopener noreferrer">{{ link }}</a>
+      </div>
+    }
     </header>
 
     <!-- Default slot: <app-content-experience> -->

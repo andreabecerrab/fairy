@@ -20,4 +20,15 @@ export class ContentExperienceComponent {
   /** 'left'  -> text first, then image
    *  'right' -> image first, then text */
   @Input() layout: ContentLayout = 'left';
+
+  isVideo(src: string): boolean {
+    return src.split(/[?#]/, 1)[0].toLowerCase().endsWith('.mp4');
+  }
+
+  scrollCarousel(carousel: HTMLElement, direction: -1 | 1): void {
+    carousel.scrollBy({
+      left: direction * carousel.clientWidth,
+      behavior: 'smooth',
+    });
+  }
 }

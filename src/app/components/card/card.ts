@@ -12,6 +12,7 @@ export class CardComponent {
     @Input() size: string = '';
     @Input() src: string = '';
 
-    ngOnInit(): void {
+  get isVideo(): boolean {
+    return this.src.split(/[?#]/, 1)[0].toLowerCase().endsWith('.mp4');
     }
 }

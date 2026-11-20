@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
 export class MainExperienceWrapperComponent {
   @Input() title = '';
   @Input() subtitle = '';
+  @Input() link = '';
+  @Input() role: string[] = [];
+  @Input() skills: string[] = [];
 
   @Input() hasAsideContent = false;
 }

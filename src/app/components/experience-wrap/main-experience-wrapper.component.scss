@@ -55,6 +55,24 @@
     right: 0;
     top: 0;
   }
+
+  .pill_skill{
+    background-color: rgb(179, 48, 42, .3);
+    color: var(--light);
+    border-color: #B3302A;
+    color: #B3302A;
+    margin-top: 1rem;
+  }
+  &__pill {
+    font-size: 1rem;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    display: inline-block;
+    line-height: 1;
+    padding: 0.47rem 0.25rem 0.25rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.25rem;
+  }
 }
 
 @media (max-width: 64rem) {
