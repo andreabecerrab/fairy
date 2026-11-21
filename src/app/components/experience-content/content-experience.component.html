@@ -24,15 +24,15 @@
                     }
                   </div>
                  }
-                 <!-- Carrousel buttons -->
-                @if (item.img.length > 1){
+              </div>
+              <!-- Carousel buttons -->
+              @if (item.img.length > 3){
                 <button class="content-experience__carousel-arrow content-experience__carousel-arrow--previous" type="button"
                   aria-label="Previous image" (click)="scrollCarousel(carousel, -1)"><span aria-hidden="true"></span></button>
                 <button class="content-experience__carousel-arrow content-experience__carousel-arrow--next" type="button"
                   aria-label="Next image" (click)="scrollCarousel(carousel, 1)"><span aria-hidden="true"></span>
                 </button>
-                }
-              </div>
+              }
             </div>
         </article>
     } @else {
