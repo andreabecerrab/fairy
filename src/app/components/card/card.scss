@@ -53,3 +53,14 @@
     letter-spacing: -1.5px;
     align-items: center;
 }
+
+
+@media (max-width: 31rem) {
+  .experience{
+    max-height: 18rem;
+    overflow: scroll;
+  }
+  .small{
+    max-width: 100%;
+  }
+}

@@ -89,3 +89,27 @@
     overflow: hidden;
     z-index: 0;
 }
+
+@media (max-width: 48rem) {
+  .home-section{
+    display: flex;
+    flex-direction: column;
+    
+    .home-experience{
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+    .home_education_item{
+        display:flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .home-activities{
+        flex-direction: column;
+    }
+  }
+  .home-content{
+    width: 100%;    
+  }
+}

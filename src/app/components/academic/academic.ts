@@ -26,16 +26,15 @@ export class Academic {
     // Tests
     { img: ['assets/img/projects/one/test-1.png', 'assets/img/projects/one/test-2.png', 'assets/img/projects/one/test-3.png'], text:'', title: 'Results:' },
   ];
-  roleOne: string[] = ['Figma', 'Wireframing', 'Prototyping', 'User Testing', 'ESP32', 'C', 'JavaScript', 'Express'];
-  skillsOne: string[] = ['Figma', 'Wireframing', 'Prototyping', 'User Testing', 'ESP32', 'C#', 'JavaScript', 'Express'];
+  skillsOne: string[] = ['Figma', 'Wireframing', 'Prototyping', 'User Testing', 'ESP32', 'C++', 'JavaScript', 'Express'];
   // TWO
-  skillsTwo = ['Figma', 'Wireframing', 'Prototyping', 'User Testing', 'ESP32', 'C', 'JavaScript', 'Express'];
+  skillsTwo = ['User Research', 'Figma', 'Hardware Design', 'Product Design'];
   projectTwo = [
     { img: ['assets/img/projects/glasses-intro.png'], text: 'Explore and innovate in the field of smart wearable devices. Redraw and reinterpret everyday objects. Through research and iterative interchange, decontextualize familiar artefacts. \n\n A case study for EssilorLuxxotica - Meta and Rayban Smart Glasses \n\n All rights reserved. Property of EssilorLuxxotica \n\n The process: \n 1) Identify the objective user\n 2) Generate ideas / Innovate \n 3) Validate the technical characteristics\n 4) Design the interaction interface \n 5) Create a prototype' },
     { img: ['assets/img/projects/two/user.png', 'assets/img/projects/two/prototype.png', 'assets/img/projects/two/components.png', 'assets/img/projects/two/view.png'], text: '' }
   ];
   // THREE
-  skillsThree = ['Figma', 'Wireframing', 'Prototyping', 'User Testing', 'ESP32', 'C', 'JavaScript', 'Express'];
+  skillsThree = ['Arduino', 'C++', 'Figma', 'Protyping', 'Interaction Design'];
   projectThree = [
     { img: ['assets/img/projects/pumpking-intro.png'], text: 'Explored the integration of Software, Hardware and Interaction Design though a physical house companion. \n\n Pumpking is an smart and interactive device that helps users identify the best plants for different spaces at home home. \n\n Integrated by 🌡️ temperature, 💧 humidity, and 🌤️ UV light sensors to collect environmental data and provide personalized plant recommendations based on each location conditions. \n\n Developed the hardware and software using Arduino and C++, and mobile application with Figma and ProtoPie.' },
     { img: ['assets/img/projects/tree/intro-0.png', 'assets/img/projects/tree/intro-1.png'], text: 'Intro', title: '' },
