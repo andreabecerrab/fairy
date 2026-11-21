@@ -1,1 +1,0 @@
-import{Ca as n,Sa as o,Ta as m,kb as s}from"./chunk-MNTBUIRQ.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-me"]],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),s(1,"me works!"),m())},encapsulation:2})};export{a as Me};
