@@ -29,16 +29,16 @@ jobs:
 
       # 4️⃣ Build Angular browser app with correct base-href for GitHub Pages
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href /neve/
+        run: npm run build -- --configuration production --base-href /fairy/
 
       # 5️⃣ Fix SPA routing by copying index.html to 404.html
       - name: Copy index.html to 404.html
-        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
+        run: cp dist/fairy/browser/index.html dist/fairy/browser/404.html
 
       # 6️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.9.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # token with repo permissions
-          publish_dir: ./dist/portfolio/browser        # browser build folder
+          publish_dir: ./dist/fairy/browser        # browser build folder
           publish_branch: gh-pages
