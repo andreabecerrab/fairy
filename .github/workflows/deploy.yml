@@ -33,7 +33,7 @@ jobs:
 
       # 5️⃣ Fix SPA routing by copying index.html to 404.html
       - name: Copy index.html to 404.html
-        run: cp dist/fairy/browser/index.html dist/fairy/browser/404.html
+        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
 
       # 6️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
